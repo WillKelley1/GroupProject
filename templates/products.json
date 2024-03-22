@@ -76,12 +76,12 @@
     ],
 
 
-    
+
     "tools": [
         {}
     ],
     "mulch": [
-        {}
+        { "id": "16", "name": "Brown Mulch", "image": "brownmulch.jpg", "price": "$4.99", "rating": 4, "description": "4lb bag fresh Brown Mulch" }    
     ]
 
 
