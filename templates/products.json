@@ -73,7 +73,24 @@
       { "name": "Sweet Potatoes", "image": "sweetpotatoes.jpg", "price": "$4.49", "rating": 4 },
       { "name": "Radishes", "image": "radishes.jpg", "price": "$1.99", "rating": 3 },
       { "name": "Peas", "image": "peas.jpg", "price": "$2.99", "rating": 4 }
+    ],
+
+
+    
+    "tools": [
+        {}
+    ],
+    "mulch": [
+        {}
     ]
+
+
+
+
+
+
+
+
   }
   
   
