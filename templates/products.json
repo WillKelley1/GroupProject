@@ -1,0 +1,79 @@
+{
+    "flowers": [
+      { "name": "White Daisies", "image": "whitedaisy.jpg", "price": "$10.99", "rating": 4 },
+      { "name": "Orchids", "image": "orchids.jpg", "price": "$24.99", "rating": 5 },
+      { "name": "Lilies", "image": "lilies.jpg", "price": "$9.99", "rating": 4 },
+      { "name": "Roses", "image": "roses.jpg", "price": "$14.99", "rating": 5 },
+      { "name": "Tulips", "image": "tulips.jpg", "price": "$12.99", "rating": 4 },
+      { "name": "Sunflowers", "image": "sunflowers.jpg", "price": "$8.99", "rating": 4 },
+      { "name": "Peonies", "image": "peonies.jpg", "price": "$15.99", "rating": 5 },
+      { "name": "Chrysanthemums", "image": "chrysanthemums.jpg", "price": "$11.99", "rating": 3 },
+      { "name": "Daffodils", "image": "daffodils.jpg", "price": "$9.99", "rating": 4 },
+      { "name": "Hyacinths", "image": "hyacinths.jpg", "price": "$12.99", "rating": 3 },
+      { "name": "Irises", "image": "irises.jpg", "price": "$13.99", "rating": 4 },
+      { "name": "Lavender", "image": "lavender.jpg", "price": "$7.99", "rating": 5 },
+      { "name": "Marigolds", "image": "marigolds.jpg", "price": "$5.99", "rating": 3 },
+      { "name": "Poppies", "image": "poppies.jpg", "price": "$6.99", "rating": 4 },
+      { "name": "Violets", "image": "violets.jpg", "price": "$4.99", "rating": 4 }
+    ],
+    "cactus": [
+      { "name": "Saguaro", "image": "saguaro.jpg", "price": "$15.99", "rating": 5 },
+      { "name": "Peyote", "image": "peyote.jpg", "price": "$25.99", "rating": 5 },
+      { "name": "Barrel Cactus", "image": "barrelcactus.jpg", "price": "$18.99", "rating": 4 },
+      { "name": "Christmas Cactus", "image": "christmascactus.jpg", "price": "$20.99", "rating": 4 },
+      { "name": "Golden Barrel", "image": "goldenbarrel.jpg", "price": "$22.99", "rating": 4 },
+      { "name": "Opuntia", "image": "opuntia.jpg", "price": "$19.99", "rating": 3 },
+      { "name": "Prickly Pear", "image": "pricklypear.jpg", "price": "$17.99", "rating": 3 },
+      { "name": "Bunny Ear Cactus", "image": "bunnyearcactus.jpg", "price": "$14.99", "rating": 4 },
+      { "name": "Moon Cactus", "image": "mooncactus.jpg", "price": "$12.99", "rating": 5 },
+      { "name": "Star Cactus", "image": "starcactus.jpg", "price": "$10.99", "rating": 4 },
+      { "name": "Turk's Cap", "image": "turkscap.jpg", "price": "$16.99", "rating": 3 },
+      { "name": "Blue Candle", "image": "bluecandle.jpg", "price": "$21.99", "rating": 4 },
+      { "name": "Fishhook Barrel", "image": "fishhookbarrel.jpg", "price": "$15.99", "rating": 4 },
+      { "name": "King Cup Cactus", "image": "kingcupcactus.jpg", "price": "$13.99", "rating": 5 },
+      { "name": "Queen of the Night", "image": "queenofthenight.jpg", "price": "$28.99", "rating": 5 }
+    ],
+    "trees": [
+      { "name": "Pine", "image": "pine.jpg", "price": "$13.99", "rating": 4 },
+      { "name": "Oak", "image": "oak.jpg", "price": "$16.99", "rating": 4 },
+      { "name": "Maple", "image": "maple.jpg", "price": "$20.99", "rating": 5 },
+      { "name": "Birch", "image": "birch.jpg", "price": "$18.99", "rating": 3 },
+      { "name": "Cherry Blossom", "image": "cherryblossom.jpg", "price": "$22.99", "rating": 5 },
+      { "name": "Apple Tree", "image": "appletree.jpg", "price": "$24.99", "rating": 5 },
+      { "name": "Peach Tree", "image": "peachtree.jpg", "price": "$24.99", "rating": 5 },
+      { "name": "Lemon Tree", "image": "lemontree.jpg", "price": "$19.99", "rating": 4 },
+      { "name": "Banana Tree", "image": "bananatree.jpg", "price": "$21.99", "rating": 4 },
+      { "name": "Coconut Tree", "image": "coconuttree.jpg", "price": "$23.99", "rating": 4 },
+      { "name": "Fig Tree", "image": "figtree.jpg", "price": "$15.99", "rating": 3 },
+      { "name": "Palm Tree", "image": "palmtree.jpg", "price": "$26.99", "rating": 5 },
+      { "name": "Sequoia", "image": "sequoia.jpg", "price": "$30.99", "rating": 5 },
+      { "name": "Willow", "image": "willow.jpg", "price": "$12.99", "rating": 3 },
+      { "name": "Redwood", "image": "redwood.jpg", "price": "$32.99", "rating": 5 }
+    ],
+    "fruitbushes": [
+      { "name": "Raspberry", "image": "raspberry.png", "price": "$10.99", "rating": 4 },
+      { "name": "Blueberry", "image": "blueberry.png", "price": "$7.99", "rating": 5 },
+      { "name": "Blackberry", "image": "blackberry.png", "price": "$9.99", "rating": 4 },
+      { "name": "Gooseberry", "image": "gooseberry.png", "price": "$8.99", "rating": 3 },
+      { "name": "Currant", "image": "currant.png", "price": "$6.99", "rating": 4 }
+    ],
+    "vegetableplants": [
+      { "name": "Tomatoes", "image": "tomatoes.jpg", "price": "$3.99", "rating": 5 },
+      { "name": "Bell Peppers", "image": "bellpeppers.jpg", "price": "$4.49", "rating": 4 },
+      { "name": "Lettuce", "image": "lettuce.jpg", "price": "$2.99", "rating": 4 },
+      { "name": "Cucumbers", "image": "cucumbers.jpg", "price": "$3.49", "rating": 5 },
+      { "name": "Carrots", "image": "carrots.jpg", "price": "$2.49", "rating": 4 },
+      { "name": "Zucchini", "image": "zucchini.jpg", "price": "$3.99", "rating": 3 },
+      { "name": "Spinach", "image": "spinach.jpg", "price": "$2.99", "rating": 5 },
+      { "name": "Kale", "image": "kale.jpg", "price": "$3.29", "rating": 4 },
+      { "name": "Broccoli", "image": "broccoli.jpg", "price": "$4.99", "rating": 5 },
+      { "name": "Cauliflower", "image": "cauliflower.jpg", "price": "$4.99", "rating": 4 },
+      { "name": "Onions", "image": "onions.jpg", "price": "$2.99", "rating": 3 },
+      { "name": "Garlic", "image": "garlic.jpg", "price": "$3.49", "rating": 5 },
+      { "name": "Sweet Potatoes", "image": "sweetpotatoes.jpg", "price": "$4.49", "rating": 4 },
+      { "name": "Radishes", "image": "radishes.jpg", "price": "$1.99", "rating": 3 },
+      { "name": "Peas", "image": "peas.jpg", "price": "$2.99", "rating": 4 }
+    ]
+  }
+  
+  
