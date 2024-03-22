@@ -18,12 +18,12 @@
                 <li><a href="#tutorials">Tutorials</a></li>
                 <li><a href="#seasons">What's In Season?</a></li>
                 <li><a href="#subscribe" class="subscribe-btn">Subscribe</a></li>
+                <li><a href="productPage.html">Product Page</a></li>
             </ul>
         </nav>
     </header>
     <div class="main-container">
         <div class="category-refinement">
-            
             <ul>
                 <h1 class="subtitle">Plants</h1>
                 <li><a href="#" onclick="loadCategory('flowers')">Flowers</a></li>
@@ -44,5 +44,12 @@
     </div>
     
     <script src="script.js"></script>
+    <script>
+        // Include this script at the end of your body tag in plants.html
+        function showProductPage(productId) {
+            sessionStorage.setItem('currentProductId', productId);
+            window.location.href = 'productPage.html';
+        }
+        </script>
     </body>
     </html>

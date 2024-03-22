@@ -44,9 +44,11 @@ function loadCategory(category) {
 
       products[category].forEach(product => {
         const productElement = document.createElement('a');
-        productElement.href = "plant-detail.html";
+        productElement.href = "#";
+        //productElement.onclick = "showProductPage('1'); return false;"
         productElement.className = 'plant-item';
-
+        productElement.onclick=function(){showProductPage(product.id)};
+        
         const productImage = document.createElement('img');
         productImage.src = product.image;
         productImage.alt = product.name;
