@@ -1,10 +1,10 @@
 <!--Merchandise-->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Merchandise for Sale</title>
-    <!--<link rel="stylesheet" href="styles.css">-->
+    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -133,14 +133,63 @@ body {
         <h3>Garden Guys Blue Shirt Small</h3>
         <p class="price">$15.99</p>
     </a>
-    <!-- Repeat the plant item for as many plants as you have -->
-    <a href="plant-detail.html" class="plant-item">
+     Repeat the plant item for as many plants as you have -->
+     <!-- <a href="plant-detail.html" class="plant-item">
         <img src="plant2.jpg" alt="Plant Name">
         <h3>GG Mens Baseball Cap</h3>
         <p class="price">$24.99</p>
-    </a>
+    </a>  -->
     <!-- More plant items... -->
-</div>
+<!-- </div>
 
 </body>
-</html>
+</html>  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Garden Guys Merchandise Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Garden Guys</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#tutorials">Tutorials</a></li>
+                <li><a href="#seasons">What's In Season?</a></li>
+                <li><a href="checkout.html">My Cart</a></li>
+                <li><a href="productPage.html">Product Page</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container">
+        <div class="category-refinement">
+            <ul>
+                <h1 class="subtitle">Merchandise</h1>
+                <li><a href="#" onclick="loadCategory('hats')">Hats</a></li>
+                <li><a href="#" onclick="loadCategory('shirts')">Shirts</a></li>
+                <li><a href="#" onclick="loadCategory('hoodies')">Hoodies</a></li>
+            </ul>
+        </div>
+    
+        <div class="plant-grid" id="plantGrid">
+            <!-- Dynamic content will be loaded here -->
+        </div>
+    </div>
+    
+    <script src="merchScript.js"></script>
+    <script>
+        // Include this script at the end of your body tag in plants.html
+        function showProductPage(productId) {
+            sessionStorage.setItem('currentProductId', productId);
+            window.location.href = 'productPage.html';
+        }
+        </script>
+    </body>
+    </html>

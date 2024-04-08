@@ -44,8 +44,41 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('productPrice').textContent = currentProduct.price;
                 document.getElementById('productRating').textContent = '★'.repeat(currentProduct.rating) + '☆'.repeat(5 - currentProduct.rating);
                 document.getElementById('productDescription').textContent = currentProduct.description;
+
+                // Add event listener for "Add to Cart" button
+                const addToCartButton = document.getElementById('addToCart');
+                addToCartButton.addEventListener('click', function() {
+                    addProductToCart(currentProduct);
+                    window.location.href = 'checkout.html'; // Redirect to checkout page
+                });
+
             } else {
                 console.error('Product not found');
             }
         });
+
+        function addProductToCart(product) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const productToAdd = {
+                id: product.id,
+                name: product.name,
+                price: parseFloat(product.price.replace("$", "")),
+                quantity: parseInt(document.getElementById('quantity').value, 10),
+                image: product.image,
+                description: product.description
+            };
+    
+            // Check if product already exists in cart
+            const existingProductIndex = cart.findIndex(item => item.id === productToAdd.id);
+            if (existingProductIndex !== -1) {
+                // Update quantity if product exists
+                cart[existingProductIndex].quantity += productToAdd.quantity;
+            } else {
+                // Add new product to cart
+                cart.push(productToAdd);
+            }
+    
+            // Store the updated cart back in localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
 });
