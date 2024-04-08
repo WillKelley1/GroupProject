@@ -220,8 +220,136 @@
           "rating": 4,
           "description": "Seed spreader for easy seeding of lawns and gardens."
         }
-      ]
+      ],
+      "seeds": [
+        {
+          "id": "47",
+          "name": "Tomato Seeds - Cherry",
+          "image": "cherrytomatoseeds.jpg",
+          "price": "$2.99",
+          "rating": 5,
+          "description": "Sweet Cherry Tomato seeds for juicy, bite-sized tomatoes."
+        },
+        {
+          "id": "48",
+          "name": "Carrot Seeds - Nantes",
+          "image": "nantescarrotseeds.jpg",
+          "price": "$1.49",
+          "rating": 4,
+          "description": "Nantes Carrot seeds for crisp, sweet, and uniform carrots."
+        },
+        {
+          "id": "49",
+          "name": "Lettuce Seeds - Romaine",
+          "image": "romainelettuceseeds.jpg",
+          "price": "$2.49",
+          "rating": 4,
+          "description": "Grow your own crisp Romaine Lettuce with our premium seeds."
+        },
+        {
+          "id": "50",
+          "name": "Pepper Seeds - Bell",
+          "image": "bellpepperseeds.jpg",
+          "price": "$3.99",
+          "rating": 5,
+          "description": "Colorful Bell Pepper seeds for sweet and crunchy peppers."
+        },
+        {
+          "id": "51",
+          "name": "Basil Seeds - Genovese",
+          "image": "genovesebasilseeds.jpg",
+          "price": "$1.99",
+          "rating": 5,
+          "description": "Genovese Basil seeds for aromatic and flavorful leaves."
+        },
+        {
+          "id": "52",
+          "name": "Cucumber Seeds - English",
+          "image": "englishcucumberseeds.jpg",
+          "price": "$2.99",
+          "rating": 4,
+          "description": "English Cucumber seeds for long, seedless, and tender cucumbers."
+        },
+        {
+          "id": "53",
+          "name": "Sunflower Seeds - Giant",
+          "image": "giantsunflowerseeds.jpg",
+          "price": "$3.49",
+          "rating": 5,
+          "description": "Giant Sunflower seeds for towering blooms and edible seeds."
+        },
+        {
+          "id": "54",
+          "name": "Zinnia Seeds - California Giant",
+          "image": "californiagiantzinniaseeds.jpg",
+          "price": "$1.99",
+          "rating": 4,
+          "description": "California Giant Zinnia seeds for vibrant and large flowers."
+        },
+        {
+          "id": "55",
+          "name": "Pumpkin Seeds - Jack O' Lantern",
+          "image": "jackolanternpumpkinseeds.jpg",
+          "price": "$2.49",
+          "rating": 4,
+          "description": "Jack O' Lantern Pumpkin seeds for perfect carving pumpkins."
+        },
+        {
+          "id": "56",
+          "name": "Watermelon Seeds - Sugar Baby",
+          "image": "sugarbabywatermelonseeds.jpg",
+          "price": "$2.99",
+          "rating": 5,
+          "description": "Sugar Baby Watermelon seeds for sweet, personal-sized melons."
+        }
+      ],
 
+      "hats": [
+        {
+          "id": "201",
+          "name": "Gardening Hat",
+          "image": "gardeninghat.jpg",
+          "price": "$14.99",
+          "rating": 5,
+          "description": "Protect yourself from the sun with our comfortable gardening hat."
+        }
+      ],
+      "shirts": [
+        {
+          "id": "202",
+          "name": "T-Shirt - Small",
+          "image": "tshirtsmall.jpg",
+          "price": "$19.99",
+          "rating": 4,
+          "description": "Eco-friendly small-sized t-shirt with a unique gardening design."
+        },
+        {
+          "id": "203",
+          "name": "T-Shirt - Medium",
+          "image": "tshirtmedium.jpg",
+          "price": "$19.99",
+          "rating": 4,
+          "description": "Medium-sized t-shirt made from organic cotton, perfect for gardeners."
+        },
+        {
+          "id": "204",
+          "name": "T-Shirt - Large",
+          "image": "tshirtlarge.jpg",
+          "price": "$19.99",
+          "rating": 4,
+          "description": "Large-sized t-shirt featuring a vibrant print for those who love gardening."
+        }
+      ],
+      "hoodies": [
+        {
+          "id": "205",
+          "name": "Gardening Hoodie",
+          "image": "gardeninghoodie.jpg",
+          "price": "$29.99",
+          "rating": 5,
+          "description": "Stay warm and cozy with our gardening-themed hoodie."
+        }
+      ]
 
 
 

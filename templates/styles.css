@@ -88,9 +88,9 @@ a {
 }
 
 /* Change background color on hover for visual effect */
-.nav-links a:hover {
+/* .nav-links a:hover {
     /* background-color: #4c5b5f; */ /* This line can be commented out or removed */
-}
+/* } */ 
 
 /* Active page styling */
 .nav-links a.active {
@@ -223,6 +223,77 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/*For the Store.html Page*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+    gap: 20px; /* Space between grid items */
+}
+
+.grid-item {
+    position: relative;
+    text-decoration: none; /* Removes underline from links */
+    overflow: hidden; /* Ensures the overlay does not exceed the image bounds */
+}
+
+.grid-item img {
+    width: 100%; /* Makes image fill the container*/
+    height:auto; 
+    display: block; /*Remove default image inline spacing */
+    transition: filter 0.3s ease; /*Smooth transition for the filter effect */
+    
+}
+
+/* Overlay that appears on hover */
+.grid-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    opacity: 0; /* Hide by default */
+    transition: opacity 0.3s ease;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    color: white;
+    font-size: 24px; /* Adjust size as needed */
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    opacity: 0; /* Hide by default */
+    transition: opacity 0.3s ease;
+}
+
+/* Show overlay and text on hover */
+.grid-item:hover::before, .grid-item:hover .overlay-text {
+    opacity: 1;
+}
+
+/* Darken image on hover */
+.grid-item:hover img {
+    filter: brightness(50%);
+}
+
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Use a single column on smaller screens */
+    }
+}
+
+
+
+
+
+
 /* Responsive adjustments */
 
 
@@ -237,3 +308,47 @@ body {
         /*}
    /* }*/ 
 
+#pagetitle {
+    font-size: 45px; /* Makes the text larger */
+    font-weight: bold; /* Makes the text bold */
+}
+
+
+
+/* checkoutpage styling */
+/* Container holding both the cart items and order summary */
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the top */
+    padding: 20px;
+}
+
+.order-items, .order-summary {
+    flex: 1; /* Each section takes equal width */
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc; /* Optional: adds a border */
+    border-radius: 5px; /* Optional: rounds corners */
+}
+
+/* Ensure there's some space between the two sections */
+.order-items {
+    margin-right: 20px; /* Add space to the right of the order items */
+}
+
+.order-summary {
+    flex-basis: 30%; /* Adjust based on how much space you want the summary to take */
+}
+
+/* Responsive design: Stack the sections on smaller screens */
+@media (max-width: 768px) {
+    .checkout-container {
+        flex-direction: column;
+    }
+
+    .order-items, .order-summary {
+        margin-right: 0; /* Remove the margin-right on smaller screens */
+        flex-basis: auto; /* Reset the width to auto */
+    }
+}
