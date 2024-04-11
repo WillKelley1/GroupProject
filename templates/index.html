@@ -50,6 +50,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to our website</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
      <link rel="stylesheet" href="style.css">  
 
 <style>
@@ -77,7 +79,7 @@
     }
 
     .logo {
-        color: white;
+        color: #59a86a;
         font-size: 24px;
         margin: 0;
     }
@@ -89,11 +91,16 @@
         display: flex;
         font-size: 18px;
     }
-
+/*-----Navigation tab animation-----*/
     .nav-links li {
         margin-right: 20px;
+        transition: transform 0.3s ease;
     }
 
+    .nav-links li:hover {
+        transform: translateY(-3px);
+    }
+/*-----Navigation tab animation-----*/
     .nav-links li a {
         text-decoration: none;
         color: white;
@@ -101,7 +108,6 @@
 
     #content {
         margin-top: 10px; 
-        
     }
 
     #home {
@@ -120,7 +126,7 @@
     }
 
     .box-of-searching {
-        margin-top: 5px;
+        margin-top: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -140,7 +146,7 @@
 
     .search-input[type="text"] {
         padding: 10px;
-        width: 300px;
+        width: 200px;
         border: 1px solid #ccc;
         border-radius: 20px;
         outline: none;
@@ -161,7 +167,8 @@
     }
 
     .search-button:hover {
-        background-color: #0056b3;
+        background-color: #0056b3; 
+      
     }
 
     footer {
@@ -175,62 +182,114 @@
         margin: 5px 0;
     }
 
-    
-    .introduction { /*still working on seperating from footer */
+    /*--------For Introduction---------*/
+    .introduction {
+        padding: 20px;
         text-align: center;
-        padding: 10px;
-        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
-/* ----------------------------test code---------------------------------------------- */
-
-/*
-    nav {
-    background-color: #333; 
-    height: 50px; 
+    .section {
+        background-color: #444444;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+        flex: 1;
+        margin: 10px;
     }
 
-    nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    .section:hover {
+        transform: translateY(-5px);
     }
 
-    nav ul li {
-    display: inline;
-    margin-right: 20px;
+    .section h2 {
+        color: #73ad21;
+        font-size: 24px;
+        margin-bottom: 10px;
     }
 
-     ul li a {
-    text-decoration: none;
-    color: #fff; 
+    .section p {
+        line-height: 1.6;
+    }
+/*--------For Introduction---------*/
+
+    .sale-ribbon {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+        font-size: 20px;
+        z-index: 9999;
+        opacity: 1;
+        transition: opacity 0.5s ease; 
     }
 
+    .hide {
+        opacity: 0;
+    }
 
+    .account-tab {
+        margin-left: 10px;
+    }
 
-    h2 {
-        color: rgb(30, 197, 30);
+    .account-tab a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px; /* Adjust font size as needed */
+        padding: 5px 10px; /* Adjust padding as needed */
+        border: 1px solid white; /* Add border for separation */
+        border-radius: 5px;
+    }
+
+    .account-tab a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+/*-----Social Media CSS-----*/
+    .social-media-links {
+        background-color: #444444;
+        padding: 20px;
         text-align: center;
-        font-size: 50px;
     }
 
-    .topnav  {
-    float: center;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-    font-size: 30px;
-   
+    .social-media-links h3 {
+        margin-bottom: 10px;
     }
 
-*/
+    .social-media-links ul {
+        list-style: none;
+        padding: 0;
+    }
 
-/* ----------------------------test code---------------------------------------------- */
-</style>
+    .social-media-links li {
+        display: inline-block;
+        margin-right: 10px;
+    }
 
-           
+    .social-media-links li:last-child {
+        margin-right: 0;
+    }
+
+    .social-media-links a {
+        text-decoration: none;
+        color: #59a86a;
+        font-weight: bold;
+    }
+
+    .social-media-links a:hover {
+        color: #007bff;
+    }
+
+/*-----Social Media CSS-----*/
+
+
+</style>      
 
 </head>
 <body>
@@ -238,16 +297,22 @@
         <nav class="navbar">
             <h1 class="logo">Garden Guys</h1>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="store.html">Store</a></li>
                 <li><a href="#blog">Blog</a></li>
-                <li><a href="#tutorials">Tutorials</a></li>
+                <li><a href="tutorial.html">Tutorials</a></li>
                 <li><a href="#seasons">What's In Season?</a></li>
                 <li><a href="checkout.html">My Cart</a></li>
             </ul>
         </nav>
-    </header>
+    
+        <div class="sale-ribbon-container">
+            <a href="store.html">
+                <div id="saleRibbon" class="sale-ribbon">Sale!</div>
+            </a>
+        </div>
 
+    </header>
 
     <div id="content">
         <section id="home">
@@ -256,7 +321,11 @@
            <!-- You need to change your api key STAT it WAS ACCIDENTLY ADDED TO GPT APRIL 7th 
                 CHANGE IT SO THAT YOU DO NOT GET CHARGED UNBELIEVABLE AMOUNTS OF MONEY-->
            
-           <h2>Welcome to Garden Guys!</h2>
+           <h1>Welcome to Garden Guys!</h1>
+
+            <div class="account-tab">
+                <a href="signin.html">Sign In / Create Account</a>
+            </div>
 
             <!-- <div class="box-of-searching">
                 <input type="text" class="search-input" placeholder="Search the Garden">
@@ -354,7 +423,7 @@
                 input.setAttribute('.placeholder', placeholders[Math.floor(Math.random() * placeholders.length)]);
             </script>
             
-            <h1>Weather Forecast</h1>
+            <h3>Local Weather Forecast</h3>
             <div class="box-of-searching">
                 <input type="text" class="search-input" id="zipCode" placeholder="Enter Zip Code">
                 <button type="submit" class="search-button" id="fetchWeather">Fetch Weather</button>
@@ -366,6 +435,17 @@
             <script>
                 // Existing weather fetch functionality for a given ZIP code
                 function fetchWeatherForZip(zipCode) {
+
+                    var zipCodePattern = /^\d{5}$/;
+
+                // Check if the entered value matches the valid ZIP code format
+                        if (!zipCodePattern.test(zipCode)) {
+                       
+                            var forecastDiv = document.getElementById('weatherForecast');
+                            forecastDiv.innerHTML = '<p>Enter a valid ZIP code</p>';
+
+                                return; // Exit the function early if the input is invalid
+                        }
                     var apiKey = '14da677c3c40bd4ed50aba3dd48a1a91';
                     var apiUrl = `http://api.openweathermap.org/data/2.5/forecast?zip=${zipCode},us&appid=${apiKey}&units=imperial`;
                 
@@ -443,7 +523,26 @@
                     var zipCode = document.getElementById('zipCode').value;
                     fetchWeatherForZip(zipCode);
                 });
-                </script>
+            //--------------sale ribbon-----------------------------
+                    //hides the sale ribbon after delay
+                    function hideSaleRibbon() {
+                        var saleRibbon = document.getElementById('saleRibbon');
+                        saleRibbon.classList.add('hide'); // Add 'hide' class to apply opacity transition
+                        setTimeout(function() {
+                            saleRibbon.style.display = 'none'; // Hide the ribbon after the transition
+                        }, 500); // Adjust the delay (in milliseconds) as needed
+                    }
+
+                    //shows sale ribbon when the page loads
+                    document.addEventListener('DOMContentLoaded', function() {
+                        var saleRibbon = document.getElementById('saleRibbon');
+                        saleRibbon.style.display = 'block'; // Display the ribbon
+                        setTimeout(hideSaleRibbon, 12000); // Hide the ribbon after 3 seconds (adjust as needed)
+                });
+            //--------------sale ribbon-----------------------------
+            </script>
+
+
             <!-- <script>
                 document.getElementById('fetchWeather').addEventListener('click', function() {
                     var zipCode = document.getElementById('zipCode').value;
@@ -486,19 +585,69 @@
         </section>
     </div>
 
-    <div class="introduction">
+<div class="introduction">
+
+        <section class="section">
+            <h2>Who We Are</h2>
+
+            <p>
+                Garden Guys isn't just a business; it's a community. 
+                Founded by passionate gardeners, we understand the joy 
+                and fulfillment that comes from nurturing plants and watching
+                them thrive. We're a team of enthusiasts, experts, and visionaries 
+                united by our love for all things green.
+            </p>
+        </section>
         
+        <section class="section">
+            <h2>What We Are</h2>
+
+            <p>
+                Garden Guys is your one-stop destination for top-quality 
+                garden equipment, plants, and expert advice.
+                Whether you're starting from scratch or enhancing your 
+                existing garden, we offer a curated selection of 
+                tools, seeds, fertilizers, and more to help you unleash
+                your creativity and transform your outdoor space into a lush paradise.
+            </p>
+        </section>
+        
+        <section class="section">
+            <h2>Why We Are</h2>
+
+            <p>
+                We believe that everyone deserves to experience the beauty and
+                tranquility of nature right at home. That's why we're dedicated 
+                to providing exceptional products and personalized service to help 
+                you achieve your gardening goals. Whether you're a seasoned pro or 
+                just getting started, we're here to inspire, educate, and empower you
+                every step of the way.
+            </p>
+        </section>
+
+</div>
+        <!--
         <p>Welcome to Garden Guys - your one-stop destination for all your gardening needs! </p>
         <p>At Garden Guys, we believe that every garden has the potential to be a masterpiece, and we're here to help you bring your green dreams to life. Whether you're a seasoned gardener or just starting out, our wide range of high-quality garden supplies, tools, and accessories has everything you need to cultivate your own slice of paradise.</p>
         <p>From vibrant flowers to lush foliage, from sturdy tools to innovative solutions, we've carefully curated our collection to inspire and empower garden enthusiasts of all levels. Our online shop offers convenient access to a diverse selection of products, ensuring that you can find exactly what you need to nurture your garden with love and care.</p>
         <p>Join us on this green journey and let the Garden Guys be your trusted partner in creating a flourishing garden sanctuary that reflects your unique style and passion. Happy gardening!</p>
-    
-    </div>
+        -->
+        <div class="social-media-links">
+            <h3>Check us out on social media:</h3>
+
+            <ul>
+                <li><a href="https://www.instagram.com/uofnorthgeorgia/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/UNG.UniversityofNorthGeorgia/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/uofnorthgeorgia?lang=en" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCOgB_JWA-gl3ZByLyeLafBQ" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://www.tiktok.com/discover/University-Of-North-Georgia?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+            </ul>
+        </div>
 
     <footer>
         <div class="fake-footer">
             <p>No feet were harmed in the making of this 'footer'.</p>
-            <p>Copyright(FAKE) © 2024 Garden Guys. All rights reserved.</p>
+            <p>Copyright(FAKE) © 2024 Garden Guys | 82 College Cir, Dahlonega, GA 30597 | All rights reserved.</p>
         </div>
     </footer>
 
