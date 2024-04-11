@@ -1,0 +1,197 @@
+<!--Flowers-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flowers for Sale</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<style>
+/* Styles.css */
+.main-container {
+    display: flex;
+    flex-direction: row; /* Aligns children side by side */
+    gap: 20px; /* Adds space between the category list and the grid */
+    padding: 20px; /* Padding around the container */
+}
+
+.category-refinement {
+    flex: 1; /* Adjust this value as needed */
+}
+
+.plant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    flex: 2; /* Adjust this value as needed */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*.plant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Adjust minmax for your preferred size */
+    /*grid-template-columns: repeat(3, 1fr); */
+    /*gap: 1rem;
+    padding: 1rem;*/
+/*}*/
+
+.plant-item {
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    transition: transform 0.2s ease-in-out;
+}
+
+.plant-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plant-item img {
+    max-width: 100%;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.plant-item h3 {
+    margin: 0.5rem 0;
+}
+
+.price {
+    background-color: #04AA6D;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Responsive breakpoints if needed */
+@media (max-width: 600px) {
+    .plant-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Responsive adjustments */
+
+
+/* Responsive adjustments */
+/*@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .category-refinement, .plant-grid {
+        flex: unset; /* Resets the flex property for mobile layout */
+        /*}
+   /* }*/ 
+
+
+</style>
+<div class="main-container">
+    <div class="category-refinement">
+        <h2>Plants</h2>
+        <ul>
+            <li>
+                <a href="index.html" class="category-item">Flowers</a>
+            </li>
+            <li>
+                <a href="index.html" class="category-item">Cactus</a>
+            </li>
+            <li>
+                <a href="index.html" class="category-item">Fruits</a>
+            </li>
+            <li>
+                <a href="index.html" class="category-item">Vegetables</a>
+            </li>
+            <li>
+                <a href="index.html" class="category-item">Succulants</a>
+            </li>
+            <li>
+                <a href="index.html" class="category-item">Vines</a>
+            </li>
+            <li>
+                <a href="index.html" class="category-item">Trees</a>
+            </li>
+            <li>
+                <a href="index.html" class="category-item">Bushes</a>
+            </li>
+            <li>
+                <a href="index.html" class="category-item">All</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="plant-grid">
+        <a href="plant-detail.html" class="plant-item">
+            <img src="whitedaisy.jpg" alt="Plant Name">
+            <h3>White Daisies</h3>
+            <p class="price">$3.99</p>
+        </a>
+
+        <a href="plant-detail.html" class="plant-item">
+            <img src="orchids.jpg" alt="Plant Name">
+            <h3>Orchids</h3>
+            <p class="price">$24.99</p>
+        </a>
+
+        <a href="plant-detail.html" class="plant-item">
+            <img src="lilies.jpg" alt="Plant Name">
+            <h3>Lilies</h3>
+            <p class="price">$9.99</p>
+        </a>
+
+        <a href="plant-detail.html" class="plant-item">
+            <img src="Tulips.jpg" alt="Plant Name">
+            <h3>Tulips</h3>
+            <p class="price">$24.50</p>
+        </a>
+
+        <a href="plant-detail.html" class="plant-item">
+            <img src="roses.jpg" alt="Plant Name">
+            <h3>Roses</h3>
+            <p class="price">$19.99</p>
+        </a>
+        
+        <a href="plant-detail.html" class="plant-item">
+            <img src="sunflowers.jpg" alt="Plant Name">
+            <h3>Sunflowers</h3>
+            <p class="price">$24.99</p>
+        </a>
+
+        <a href="plant-detail.html" class="plant-item">
+            <img src="peonies.jpg" alt="Plant Name">
+            <h3>Peonies</h3>
+            <p class="price">$19.99</p>
+        </a>
+        
+        <a href="plant-detail.html" class="plant-item">
+            <img src="plant2.jpg" alt="Plant Name">
+            <h3>Roman Lettuce</h3>
+            <p class="price">$24.99</p>
+        </a>
+
+        <a href="plant-detail.html" class="plant-item">
+            <img src="plant1.jpg" alt="Plant Name">
+            <h3>Tomato</h3>
+            <p class="price">$19.99</p>
+        </a>
+        
+        <!-- More plant items... -->
+    </div>
+</div>
+
+</body>
+</html>

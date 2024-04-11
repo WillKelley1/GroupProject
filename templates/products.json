@@ -1,0 +1,360 @@
+{
+    "flowers": [
+      { "id": "1", "name": "White Daisies", "image": "whitedaisy.jpg", "price": "$10.99", "rating": 4, "description": "A bunch of fresh white daisies."},
+      { "id": "2", "name": "Orchids", "image": "orchids.jpg", "price": "$24.99", "rating": 5 },
+      { "id": "3", "name": "Lilies", "image": "lilies.jpg", "price": "$9.99", "rating": 4 },
+      { "id": "4", "name": "Roses", "image": "roses.jpg", "price": "$14.99", "rating": 5 },
+      { "id": "5", "name": "Tulips", "image": "tulips.jpg", "price": "$12.99", "rating": 4 },
+      { "id": "6", "name": "Sunflowers", "image": "sunflowers.jpg", "price": "$8.99", "rating": 4 },
+      { "id": "7", "name": "Peonies", "image": "peonies.jpg", "price": "$15.99", "rating": 5 },
+      { "id": "8", "name": "Chrysanthemums", "image": "chrysanthemums.jpg", "price": "$11.99", "rating": 3 },
+      { "id": "9", "name": "Daffodils", "image": "daffodils.jpg", "price": "$9.99", "rating": 4 },
+      { "id": "10", "name": "Hyacinths", "image": "hyacinths.jpg", "price": "$12.99", "rating": 3 },
+      { "id": "11", "name": "Irises", "image": "irises.jpg", "price": "$13.99", "rating": 4 },
+      { "id": "12", "name": "Lavender", "image": "lavender.jpg", "price": "$7.99", "rating": 5 },
+      { "id": "13", "name": "Marigolds", "image": "marigolds.jpg", "price": "$5.99", "rating": 3 },
+      { "id": "14", "name": "Poppies", "image": "poppies.jpg", "price": "$6.99", "rating": 4 },
+      { "id": "15", "name": "Violets", "image": "violets.jpg", "price": "$4.99", "rating": 4 }
+    ],
+    "cactus": [
+      { "name": "Barrel Cactus", "image": "barrelcactus.jpg", "price": "$18.99", "rating": 4 },
+      { "name": "Christmas Cactus", "image": "christmascactus.jpg", "price": "$20.99", "rating": 4 },
+      { "name": "Golden Barrel", "image": "goldenbarrel.jpg", "price": "$22.99", "rating": 4 },
+      { "name": "Prickly Pear", "image": "pricklypear.jpg", "price": "$17.99", "rating": 3 },
+      { "name": "Bunny Ear Cactus", "image": "bunnyearcactus.jpg", "price": "$14.99", "rating": 4 },
+      { "name": "Moon Cactus", "image": "mooncactus.jpg", "price": "$12.99", "rating": 5 },
+      { "name": "Star Cactus", "image": "starcactus.jpg", "price": "$10.99", "rating": 4 },
+      { "name": "Turk's Cap", "image": "turkscap.jpg", "price": "$16.99", "rating": 3 },
+      { "name": "Blue Candle", "image": "bluecandle.jpg", "price": "$21.99", "rating": 4 },
+      { "name": "Fishhook Barrel", "image": "fishhookbarrel.jpg", "price": "$15.99", "rating": 4 },
+      { "name": "King Cup Cactus", "image": "kingcupcactus.jpg", "price": "$13.99", "rating": 5 },
+      { "name": "Queen of the Night", "image": "queenofthenight.jpg", "price": "$28.99", "rating": 5 },
+      { "name": "Saguaro", "image": "saguaro.jpg", "price": "$15.99", "rating": 5 },
+      { "name": "Peyote", "image": "peyote.jpg", "price": "$25.99", "rating": 5 },
+      { "name": "Opuntia", "image": "opuntia.jpg", "price": "$19.99", "rating": 3 }
+    ],
+    "trees": [
+      { "name": "Pine", "image": "pine.jpg", "price": "$13.99", "rating": 4 },
+      { "name": "Oak", "image": "oak.jpg", "price": "$16.99", "rating": 4 },
+      { "name": "Maple", "image": "maple.jpg", "price": "$20.99", "rating": 5 },
+      { "name": "Birch", "image": "birch.jpg", "price": "$18.99", "rating": 3 },
+      { "name": "Cherry Blossom", "image": "cherryblossom.jpg", "price": "$22.99", "rating": 5 },
+      { "name": "Apple Tree", "image": "appletree.jpg", "price": "$24.99", "rating": 5 },
+      { "name": "Peach Tree", "image": "peachtree.jpg", "price": "$24.99", "rating": 5 },
+      { "name": "Lemon Tree", "image": "lemontree.jpg", "price": "$19.99", "rating": 4 },
+      { "name": "Banana Tree", "image": "bananatree.jpg", "price": "$21.99", "rating": 4 },
+      { "name": "Coconut Tree", "image": "coconuttree.jpg", "price": "$23.99", "rating": 4 },
+      { "name": "Fig Tree", "image": "figtree.jpg", "price": "$15.99", "rating": 3 },
+      { "name": "Palm Tree", "image": "palmtree.jpg", "price": "$26.99", "rating": 5 },
+      { "name": "Sequoia", "image": "sequoia.jpg", "price": "$30.99", "rating": 5 },
+      { "name": "Willow", "image": "willow.jpg", "price": "$12.99", "rating": 3 },
+      { "name": "Redwood", "image": "redwood.jpg", "price": "$32.99", "rating": 5 }
+    ],
+    "fruitbushes": [
+      { "name": "Raspberry", "image": "raspberry.png", "price": "$10.99", "rating": 4 },
+      { "name": "Blueberry", "image": "blueberry.png", "price": "$7.99", "rating": 5 },
+      { "name": "Blackberry", "image": "blackberry.png", "price": "$9.99", "rating": 4 },
+      { "name": "Gooseberry", "image": "gooseberry.png", "price": "$8.99", "rating": 3 },
+      { "name": "Currant", "image": "currant.png", "price": "$6.99", "rating": 4 }
+    ],
+    "vegetableplants": [
+      { "name": "Tomatoes", "image": "tomatoes.jpg", "price": "$3.99", "rating": 5 },
+      { "name": "Bell Peppers", "image": "bellpeppers.jpg", "price": "$4.49", "rating": 4 },
+      { "name": "Lettuce", "image": "lettuce.jpg", "price": "$2.99", "rating": 4 },
+      { "name": "Cucumbers", "image": "cucumbers.jpg", "price": "$3.49", "rating": 5 },
+      { "name": "Carrots", "image": "carrots.jpg", "price": "$2.49", "rating": 4 },
+      { "name": "Zucchini", "image": "zucchini.jpg", "price": "$3.99", "rating": 3 },
+      { "name": "Spinach", "image": "spinach.jpg", "price": "$2.99", "rating": 5 },
+      { "name": "Kale", "image": "kale.jpg", "price": "$3.29", "rating": 4 },
+      { "name": "Broccoli", "image": "broccoli.jpg", "price": "$4.99", "rating": 5 },
+      { "name": "Cauliflower", "image": "cauliflower.jpg", "price": "$4.99", "rating": 4 },
+      { "name": "Onions", "image": "onions.jpg", "price": "$2.99", "rating": 3 },
+      { "name": "Garlic", "image": "garlic.jpg", "price": "$3.49", "rating": 5 },
+      { "name": "Sweet Potatoes", "image": "sweetpotatoes.jpg", "price": "$4.49", "rating": 4 },
+      { "name": "Radishes", "image": "radishes.jpg", "price": "$1.99", "rating": 3 },
+      { "name": "Peas", "image": "peas.jpg", "price": "$2.99", "rating": 4 }
+    ],
+
+
+
+    
+    "mulch": [
+        { "id": "16", "name": "Brown Mulch", "image": "brownmulch.jpg", "price": "$4.99", "rating": 4, "description": "4lb bag of fresh Brown Mulch." },
+        { "id": "17", "name": "Black Mulch", "image": "blackmulch.jpg", "price": "$5.49", "rating": 5, "description": "Durable Black Mulch for garden beds." },
+        { "id": "18", "name": "Red Mulch", "image": "redmulch.jpg", "price": "$5.99", "rating": 3, "description": "Richly colored Red Mulch to enhance your landscape." },
+        { "id": "19", "name": "Cedar Mulch", "image": "cedarmulch.jpg", "price": "$6.49", "rating": 4, "description": "Natural Cedar Mulch for a pleasant aroma." },
+        { "id": "20", "name": "Rubber Mulch", "image": "rubbermulch.jpg", "price": "$7.99", "rating": 4, "description": "Eco-friendly Rubber Mulch for playgrounds." },
+        { "id": "21", "name": "Pine Bark Mulch", "image": "pinebarkmulch.jpg", "price": "$4.99", "rating": 5, "description": "Pine Bark Mulch for acid-loving plants." },
+        { "id": "22", "name": "Hardwood Mulch", "image": "hardwoodmulch.jpg", "price": "$5.99", "rating": 3, "description": "Shredded Hardwood Mulch for natural look." },
+        { "id": "23", "name": "Cocoa Bean Mulch", "image": "cocoabeanmulch.jpg", "price": "$6.99", "rating": 4, "description": "Cocoa Bean Mulch with rich chocolate scent." }
+    ],
+    "soil": [
+        { "id": "24", "name": "Potting Soil", "image": "pottingsoil.jpg", "price": "$6.99", "rating": 5, "description": "Premium Potting Soil for indoor and outdoor plants." },
+        { "id": "25", "name": "Garden Soil", "image": "gardensoil.jpg", "price": "$5.99", "rating": 4, "description": "All-purpose Garden Soil for vegetable and flower beds." },
+        { "id": "26", "name": "Topsoil", "image": "topsoil.jpg", "price": "$3.99", "rating": 4, "description": "High-quality Topsoil for lawn repair and raised gardens." },
+        { "id": "27", "name": "Compost", "image": "compost.jpg", "price": "$7.99", "rating": 5, "description": "Organic Compost to enrich your garden soil." },
+        { "id": "28", "name": "Orchid Mix", "image": "orchidmix.jpg", "price": "$8.49", "rating": 5, "description": "Specialty Orchid Mix for orchid enthusiasts." },
+        { "id": "29", "name": "Cactus Mix", "image": "cactusmix.jpg", "price": "$4.99", "rating": 4, "description": "Cactus Mix with excellent drainage for succulents and cacti." },
+        { "id": "30", "name": "Seed Starter Mix", "image": "seedstartermix.jpg", "price": "$5.49", "rating": 5, "description": "Seed Starter Mix to boost germination of seedlings." },
+        { "id": "31", "name": "Peat Moss", "image": "peatmoss.jpg", "price": "$4.49", "rating": 3, "description": "Sphagnum Peat Moss for acidic soil adjustments." }
+    ],
+
+    "tools": [
+        {
+          "id": "32",
+          "name": "Trowel",
+          "image": "trowel.jpg",
+          "price": "$3.99",
+          "rating": 5,
+          "description": "Stainless steel trowel with ergonomic handle for planting."
+        },
+        {
+          "id": "33",
+          "name": "Pruning Shears",
+          "image": "pruningshears.jpg",
+          "price": "$12.99",
+          "rating": 4,
+          "description": "Durable pruning shears for shaping and trimming plants."
+        },
+        {
+          "id": "34",
+          "name": "Garden Rake",
+          "image": "gardenrake.jpg",
+          "price": "$15.99",
+          "rating": 4,
+          "description": "Heavy-duty garden rake with a comfortable grip."
+        },
+        {
+          "id": "35",
+          "name": "Spade",
+          "image": "spade.jpg",
+          "price": "$13.99",
+          "rating": 4,
+          "description": "High-quality spade for turning soil and garden maintenance."
+        },
+        {
+          "id": "36",
+          "name": "Hoe",
+          "image": "hoe.jpg",
+          "price": "$9.99",
+          "rating": 3,
+          "description": "Traditional garden hoe for weeding and cultivating soil."
+        },
+        {
+          "id": "37",
+          "name": "Gardening Gloves",
+          "image": "gardeninggloves.jpg",
+          "price": "$5.99",
+          "rating": 5,
+          "description": "Comfortable and durable gloves to protect your hands."
+        },
+        {
+          "id": "38",
+          "name": "Watering Can",
+          "image": "wateringcan.jpg",
+          "price": "$7.99",
+          "rating": 4,
+          "description": "Stylish watering can with a long spout for easy reach."
+        },
+        {
+          "id": "39",
+          "name": "Garden Fork",
+          "image": "gardenfork.jpg",
+          "price": "$14.99",
+          "rating": 4,
+          "description": "Robust garden fork for aerating soil and uprooting weeds."
+        },
+        {
+          "id": "40",
+          "name": "Wheelbarrow",
+          "image": "wheelbarrow.jpg",
+          "price": "$27.99",
+          "rating": 4,
+          "description": "Sturdy wheelbarrow for transporting soil, mulch, and plants."
+        },
+        {
+          "id": "41",
+          "name": "Lawn Mower",
+          "image": "lawnmower.jpg",
+          "price": "$199.99",
+          "rating": 5,
+          "description": "Efficient and reliable lawn mower for a perfect cut every time."
+        },
+        {
+          "id": "42",
+          "name": "Garden Hose",
+          "image": "gardenhose.jpg",
+          "price": "$18.99",
+          "rating": 5,
+          "description": "Flexible garden hose with adjustable nozzle settings."
+        },
+        {
+          "id": "43",
+          "name": "Leaf Rake",
+          "image": "leafrake.jpg",
+          "price": "$11.99",
+          "rating": 3,
+          "description": "Lightweight leaf rake for easy cleanup of fallen leaves."
+        },
+        {
+          "id": "44",
+          "name": "Hedge Trimmer",
+          "image": "hedgetrimmer.jpg",
+          "price": "$59.99",
+          "rating": 4,
+          "description": "Electric hedge trimmer for quick and easy hedge maintenance."
+        },
+        {
+          "id": "45",
+          "name": "Fertilizer Spreader",
+          "image": "fertilizerspreader.jpg",
+          "price": "$35.99",
+          "rating": 4,
+          "description": "Handheld fertilizer spreader for even distribution of fertilizers."
+        },
+        {
+          "id": "46",
+          "name": "Seed Spreader",
+          "image": "seedspreader.jpg",
+          "price": "$19.99",
+          "rating": 4,
+          "description": "Seed spreader for easy seeding of lawns and gardens."
+        }
+      ],
+      "seeds": [
+        {
+          "id": "47",
+          "name": "Tomato Seeds - Cherry",
+          "image": "cherrytomatoseeds.jpg",
+          "price": "$2.99",
+          "rating": 5,
+          "description": "Sweet Cherry Tomato seeds for juicy, bite-sized tomatoes."
+        },
+        {
+          "id": "48",
+          "name": "Carrot Seeds - Nantes",
+          "image": "nantescarrotseeds.jpg",
+          "price": "$1.49",
+          "rating": 4,
+          "description": "Nantes Carrot seeds for crisp, sweet, and uniform carrots."
+        },
+        {
+          "id": "49",
+          "name": "Lettuce Seeds - Romaine",
+          "image": "romainelettuceseeds.jpg",
+          "price": "$2.49",
+          "rating": 4,
+          "description": "Grow your own crisp Romaine Lettuce with our premium seeds."
+        },
+        {
+          "id": "50",
+          "name": "Pepper Seeds - Bell",
+          "image": "bellpepperseeds.jpg",
+          "price": "$3.99",
+          "rating": 5,
+          "description": "Colorful Bell Pepper seeds for sweet and crunchy peppers."
+        },
+        {
+          "id": "51",
+          "name": "Basil Seeds - Genovese",
+          "image": "genovesebasilseeds.jpg",
+          "price": "$1.99",
+          "rating": 5,
+          "description": "Genovese Basil seeds for aromatic and flavorful leaves."
+        },
+        {
+          "id": "52",
+          "name": "Cucumber Seeds - English",
+          "image": "englishcucumberseeds.jpg",
+          "price": "$2.99",
+          "rating": 4,
+          "description": "English Cucumber seeds for long, seedless, and tender cucumbers."
+        },
+        {
+          "id": "53",
+          "name": "Sunflower Seeds - Giant",
+          "image": "giantsunflowerseeds.jpg",
+          "price": "$3.49",
+          "rating": 5,
+          "description": "Giant Sunflower seeds for towering blooms and edible seeds."
+        },
+        {
+          "id": "54",
+          "name": "Zinnia Seeds - California Giant",
+          "image": "californiagiantzinniaseeds.jpg",
+          "price": "$1.99",
+          "rating": 4,
+          "description": "California Giant Zinnia seeds for vibrant and large flowers."
+        },
+        {
+          "id": "55",
+          "name": "Pumpkin Seeds - Jack O' Lantern",
+          "image": "jackolanternpumpkinseeds.jpg",
+          "price": "$2.49",
+          "rating": 4,
+          "description": "Jack O' Lantern Pumpkin seeds for perfect carving pumpkins."
+        },
+        {
+          "id": "56",
+          "name": "Watermelon Seeds - Sugar Baby",
+          "image": "sugarbabywatermelonseeds.jpg",
+          "price": "$2.99",
+          "rating": 5,
+          "description": "Sugar Baby Watermelon seeds for sweet, personal-sized melons."
+        }
+      ],
+
+      "hats": [
+        {
+          "id": "201",
+          "name": "Gardening Hat",
+          "image": "gardeninghat.jpg",
+          "price": "$14.99",
+          "rating": 5,
+          "description": "Protect yourself from the sun with our comfortable gardening hat."
+        }
+      ],
+      "shirts": [
+        {
+          "id": "202",
+          "name": "T-Shirt - Small",
+          "image": "tshirtsmall.jpg",
+          "price": "$19.99",
+          "rating": 4,
+          "description": "Eco-friendly small-sized t-shirt with a unique gardening design."
+        },
+        {
+          "id": "203",
+          "name": "T-Shirt - Medium",
+          "image": "tshirtmedium.jpg",
+          "price": "$19.99",
+          "rating": 4,
+          "description": "Medium-sized t-shirt made from organic cotton, perfect for gardeners."
+        },
+        {
+          "id": "204",
+          "name": "T-Shirt - Large",
+          "image": "tshirtlarge.jpg",
+          "price": "$19.99",
+          "rating": 4,
+          "description": "Large-sized t-shirt featuring a vibrant print for those who love gardening."
+        }
+      ],
+      "hoodies": [
+        {
+          "id": "205",
+          "name": "Gardening Hoodie",
+          "image": "gardeninghoodie.jpg",
+          "price": "$29.99",
+          "rating": 5,
+          "description": "Stay warm and cozy with our gardening-themed hoodie."
+        }
+      ]
+
+
+
+
+
+  }
+  
+  

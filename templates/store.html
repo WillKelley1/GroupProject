@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Store Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <style>
+        .carousel-container {
+            position: relative;
+            width: 600px; /* Or your preferred width */
+            overflow: hidden;
+        }
+        
+        .carousel {
+            position: relative;
+        }
+        
+        .carousel-image {
+            width: 100%;
+            display: none; /* Hide images by default */
+        }
+        
+        .carousel-image.visible {
+            display: block; /* Only show the image marked as visible */
+        }
+        
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #ddd;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .left-btn {
+            left: 10px;
+        }
+        
+        .right-btn {
+            right: 10px;
+        }
+        
+    </style>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Garden Guys</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#tutorials">Tutorials</a></li>
+                <li><a href="#seasons">What's In Season?</a></li>
+                <li><a href="checkout.html">My Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="plants.html">Plants</a></li>
+        <li><a href="seeds.html">Seeds</a></li>
+        <li><a href="materials.html">Materials</a></li>
+        <li><a href="merchandise.html">Merchandise</a></li>
+        
+    </ul> -->
+    <h1 id="pagetitle">Welcome to the GardenGuys Store</h1>
+
+    <div class="grid-container">
+        <a href="plants.html" class="grid-item">
+            <img src="sunflowers.jpg" alt="Plants">
+            <span class="overlay-text">Plants</span>
+        </a>
+        <a href="seeds.html" class="grid-item">
+            <img src="romainelettuceseeds.jpg" alt="Seeds">
+            <span class="overlay-text">Seeds</span>
+        </a>
+        <a href="materials.html" class="grid-item">
+            <img src="brownmulch.jpg" alt="Gardening Materials">
+            <span class="overlay-text">Gardening Materials</span>
+        </a>
+        <a href="merchandise.html" class="grid-item">
+            <img src=".jpg" alt="GardenGuys Merchandise">
+            <span class="overlay-text">Merchandise</span>
+        </a>
+    </div>
+    
+    <!-- <div class="gallery-container">
+        <button class="scroll-btn left-btn">&#8592;</button>  Left arrow -->
+        <!--<div class="image-gallery">
+            <a href="plants.html"><img src="whitedaisy.jpg" alt="Image 1"></a>
+            <a href="materials.html"><img src="brownmulch.jpg" alt="Image 2"></a>
+            <a href="merchandise.html"><img src="image3.jpg" alt="Image 3"></a> -->
+            <!-- Add more images as needed -->
+        <!-- </div>
+        <button class="scroll-btn right-btn">&#8594;</button> 
+    </div> -->
+    <!-- <div class="carousel-container">
+        <div class="carousel">
+            <img src="whitedaisy.jpg" alt="Image 1" class="carousel-image visible">
+            <img src="brownmulch.jpg" alt="Image 2" class="carousel-image">
+            <img src="image3.jpg" alt="Image 3" class="carousel-image"> -->
+            <!-- Add more images as needed -->
+        <!-- </div>
+        <button class="carousel-btn left-btn">&#8592;</button>
+        <button class="carousel-btn right-btn">&#8594;</button>
+    </div> -->
+
+    <!--Create a grid to contain the three different things that yall sell and allow that to take you to the pages your have created for each-->
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.carousel-image');
+            let currentIndex = 0; // Track the currently displayed image
+        
+            function showImage(index) {
+                images.forEach((img, i) => {
+                    img.classList.remove('visible');
+                    if (i === index) {
+                        img.classList.add('visible');
+                    }
+                });
+            }
+        
+            document.querySelector('.left-btn').addEventListener('click', function() {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                showImage(currentIndex);
+            });
+        
+            document.querySelector('.right-btn').addEventListener('click', function() {
+                currentIndex = (currentIndex + 1) % images.length;
+                showImage(currentIndex);
+            });
+        
+            // Initially show the first image
+            showImage(currentIndex);
+        });
+        
+    </script> -->
+
+
+  </body>
