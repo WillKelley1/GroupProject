@@ -1,0 +1,195 @@
+<!--Merchandise-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Merchandise for Sale</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<style>
+    /* Styles.css */
+body {
+    background-color: #333;
+}
+h1 {
+    color: #f2ecec;
+}
+/* Reset default list styles and use flexbox */
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-around; /* This will distribute space around items */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex; /* Use flexbox to distribute space */
+    width: 100%; /* Make the ul take up the full width of the navbar */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    flex: 1; /* Each li element will take up equal space */
+    text-align: center; /* Center the text inside each li */
+}
+
+/* Remove default link styles */
+.nav-links a {
+    text-decoration: none;
+    color: #f2ecec;
+    display: block; /* Block display to fill the li */
+    padding: 0.5rem 1rem; /* Add padding for clickable area and visual spacing */
+}
+
+/* Change background color on hover for visual effect */
+.nav-links a:hover {
+    background-color: #56c80f;
+}
+
+/* Active page styling */
+.nav-links a.active {
+    background-color: #333;
+    color: white;
+}
+/* Styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.plant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Adjust minmax for your preferred size */
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.plant-item {
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    transition: transform 0.2s ease-in-out;
+}
+
+.plant-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plant-item img {
+    max-width: 100%;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.plant-item h3 {
+    margin: 0.5rem 0;
+}
+
+.price {
+    background-color: #04AA6D;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Responsive breakpoints if needed */
+@media (max-width: 600px) {
+    .plant-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
+<header>
+    <nav class="navbar">
+        <h1 class="logo">Garden Guys</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#tutorials">Tutorials</a></li>
+            <li><a href="#seasons">What's In Season?</a></li>
+            <li><a href="#subscribe" class="subscribe-btn">Subscribe</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="plant-grid">
+    <a href="plant-detail.html" class="plant-item">
+        <img src="plant1.jpg" alt="Plant Name">
+        <h3>Garden Guys Blue Shirt Small</h3>
+        <p class="price">$15.99</p>
+    </a>
+     Repeat the plant item for as many plants as you have -->
+     <!-- <a href="plant-detail.html" class="plant-item">
+        <img src="plant2.jpg" alt="Plant Name">
+        <h3>GG Mens Baseball Cap</h3>
+        <p class="price">$24.99</p>
+    </a>  -->
+    <!-- More plant items... -->
+<!-- </div>
+
+</body>
+</html>  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Garden Guys Merchandise Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Garden Guys</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#tutorials">Tutorials</a></li>
+                <li><a href="#seasons">What's In Season?</a></li>
+                <li><a href="checkout.html">My Cart</a></li>
+                <li><a href="productPage.html">Product Page</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container">
+        <div class="category-refinement">
+            <ul>
+                <h1 class="subtitle">Merchandise</h1>
+                <li><a href="#" onclick="loadCategory('hats')">Hats</a></li>
+                <li><a href="#" onclick="loadCategory('shirts')">Shirts</a></li>
+                <li><a href="#" onclick="loadCategory('hoodies')">Hoodies</a></li>
+            </ul>
+        </div>
+    
+        <div class="plant-grid" id="plantGrid">
+            <!-- Dynamic content will be loaded here -->
+        </div>
+    </div>
+    
+    <script src="merchScript.js"></script>
+    <script>
+        // Include this script at the end of your body tag in plants.html
+        function showProductPage(productId) {
+            sessionStorage.setItem('currentProductId', productId);
+            window.location.href = 'productPage.html';
+        }
+        </script>
+    </body>
+    </html>
