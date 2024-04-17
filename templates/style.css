@@ -8,11 +8,19 @@ body {
 
 h1 {
     text-align: center;
-    color: #ddd;
+    /*color: #ddd;*/
+    color: #59a86a;
 }
 
 h2 {
     color: #59a86a;
+}
+
+h3 {
+    color: #73ad21;
+    margin-top: 0px;
+    text-align: center;
+    padding-top: 5px;
 }
 
 p {
