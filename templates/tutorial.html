@@ -37,9 +37,75 @@
             border-radius: 8px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
+/*Navigation stuff*/
+    .nav-links li {
+        margin-right: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .nav-links li:hover {
+        transform: translateY(-3px);
+    }
+
+	body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        background-color: #333;
+        height: 50px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .logo {
+        color: #59a86a;
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .nav-links {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        font-size: 18px;
+    }
+
+	.nav-links li a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+/*Navigation stuff*/
     </style>
 </head>
 <body>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Garden Guys</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="tutorial-mainpage.html">Tutorials</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Blog2.html">Blog 2</a></li>
+                <li><a href="Blog3.html">Blog 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="container">
         <h1>How to Plant Flowers</h1>
         <div class="step">

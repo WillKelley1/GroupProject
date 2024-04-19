@@ -10,11 +10,11 @@ body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: #f5f5f5;
+	background-color: #555;
 }
 
 header {
-	background-color: #003300;
+	background-color: #555;
 	color: #fff;
 	padding: 20px;
 	text-align: center;
@@ -27,7 +27,7 @@ header {
 }
 
 .post {
-	background-color: #fff;
+	background-color: #555;
 	padding: 20px;
 	margin-bottom: 20px;
 	border-radius: 5px;
@@ -46,23 +46,100 @@ header {
 	margin-top: 10px;
 	padding-left: 20px;
 }
+
+/*Navigation stuff*/
+
+.nav-links li {
+        margin-right: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .nav-links li:hover {
+        transform: translateY(-3px);
+    }
+
+	body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        background-color: #333;
+        height: 50px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .logo {
+        color: #59a86a;
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .nav-links {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        font-size: 18px;
+    }
+
+	.nav-links li a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+/*Navigation stuff*/
+
+/*Footer*/
+footer {
+        background-color: #333;
+        color: #59a86a; /* style.css controlling */
+        padding: 20px;
+        text-align: center;
+    }
+
+    .fake-footer p {
+        margin: 5px 0;
+    }
+/*Footer*/
 </style>
 
 </head>
 
 <body>
-
-<header>
-
-<h1>Top 10 Best and Worst Flowers for Your Garden</h1>		
+	<header>
+        <nav class="navbar">
+            <h1 class="logo">Garden Guys</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="tutorial-mainpage.html">Tutorials</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Blog2.html">Blog 2</a></li>
+                <li><a href="Blog3.html">Blog 3</a></li>
+            </ul>
+        </nav>
+    </header>
+	
 
 </header>
 
-	<div class="post">
+<div class="introduction">
+	<section class="post">
 		<h2>Top 10 best Flowers for Your Garden</h2>
 		<p>Flowers add beauty, color, and fragrance to any garden. Here are the top 10 flowers that will make your garden bloom with joy:</p>
 
-		<div class="flower-list">
+		<div class="post">
             <ol>
                 <li>Rose</li>
                 
@@ -85,9 +162,12 @@ header {
                 <li>Marigold</li>
             </ol>
         </div>
-       <p>Each of these flowers has its own unique charm and can thrive in different conditions. Let's explore each one in detail:</p> 
 	</div>
-	<div class="post">
+	<setion class="post"></setion>
+       <p>Each of these flowers has its own unique charm and can thrive in different conditions. Let's explore each one in detail:</p> 
+</div>
+
+	<section class="post">
             <h2>1. Roses</h2>
             	 <p>Roses are classic symbols of love and beauty. They come in a variety of colors and sizes, making them versatile for any garden. With proper care and pruning, roses can bloom from spring to fall.</p> 
         	<h2>2. Tulips</h2>
@@ -111,11 +191,11 @@ header {
         </div>
 	</div>
 
-<div class="post">
+<section class="section">
 		<h2>Top 10 worst Flowers for Your Garden</h2>
 		<p>Flowers add beauty, color, and fragrance to any garden. Here are the top 10 flowers that will make your garden bloom with joy:</p>
 
-		<div class="flower-list">
+		<section class="post">
             <ol>
                 
                 <li>Japanese Knotweed</li>
@@ -139,7 +219,8 @@ header {
                 <li>Purple Loosestrife</li>
             </ol>
         </div>
-        <div class="post">
+
+        <section class="post">
        
         <h2>1. Japanese Knotweed</h2>
         	<p><strong>Description:</strong>Japanese Knotweed is a perennial plant with bamboo-like stems and heart-shaped leaves. It produces small white flowers in late summer.</p>
@@ -186,9 +267,17 @@ header {
 </div>
 
 
-	<p>The following link will take you to our tutorial Page.<a href="Tutorial.html">Tutorial Page</a></p>
+	<p>The following link will take you to our tutorial Page.<a href="tutorial-mainpage.html">Tutorial Page</a></p>
 </div>
 <p>The link to our garden section <a href=""> </a> and tools and resource sections <a href=""> </a> if you require any tools or resources for your garden.</p>
+
+
+<footer>
+	<div class="fake-footer">
+		<p>No feet were harmed in the making of this 'footer'.</p>
+		<p>Copyright(FAKE) © 2024 Garden Guys | 82 College Cir, Dahlonega, GA 30597 | All rights reserved.</p>
+	</div>
+</footer>
 
 </body>
 </html>     
