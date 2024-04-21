@@ -318,106 +318,12 @@
 
     <div id="content">
         <section id="home">
-            <!--<img src="gardener.jpg" alt="A gardener working in the garden" width="500" height="500"> -->
         
            <!-- You need to change your api key STAT it WAS ACCIDENTLY ADDED TO GPT APRIL 7th 
                 CHANGE IT SO THAT YOU DO NOT GET CHARGED UNBELIEVABLE AMOUNTS OF MONEY-->
            
            <h1>Welcome to Garden Guys!</h1>
 
-           <!--------------SIGN IN TESTING------------>
-           <!--
-            <div class="account-tab">
-                <a href="signin.html">Sign In / Create Account</a>
-            </div>
-            -->
-        <!--------------SIGN IN TESTING------------>
-        
-            <!-- <div class="box-of-searching">
-                <input type="text" class="search-input" placeholder="Search the Garden">
-                <button type="submit" class="search-button">GROW!</button> see what i did there
-            </div> -->
-            <!-- <script>
-                // Existing weather fetch functionality for a given ZIP code
-                function fetchWeatherForZip(zipCode) {
-                    var apiKey = '14da677c3c40bd4ed50aba3dd48a1a91';
-                    var apiUrl = `http://api.openweathermap.org/data/2.5/forecast?zip=${zipCode},us&appid=${apiKey}&units=imperial`;
-                
-                    fetch(apiUrl)
-                        .then(response => response.json())
-                        .then(data => {
-                            displayWeather(data);
-                        })
-                        .catch(error => {
-                            console.error('Error fetching weather data:', error);
-                        });
-                }
-                
-                // Function to display weather data
-                function displayWeather(data) {
-                    var forecastDiv = document.getElementById('weatherForecast');
-                    forecastDiv.innerHTML = ''; // Clear previous forecast
-                
-                    for (let i = 0; i < 5; i++) {
-                        let date = new Date(data.list[i * 8].dt_txt);
-                        let temp = data.list[i * 8].main.temp;
-                        let description = data.list[i * 8].weather[0].description;
-                        let icon = data.list[i * 8].weather[0].icon;
-                
-                        forecastDiv.innerHTML += `
-                            <div style="padding: 10px; text-align: center; display: inline-block;">
-                                <p><b>${date.toDateString()}</b></p>
-                                <img src="http://openweathermap.org/img/wn/${icon}.png" alt="${description}">
-                                <p>${temp} °F</p>
-                                <p>${description}</p>
-                            </div>
-                        `;
-                    }
-                }
-                
-                // New functionality for automatic location detection and weather fetching
-                function detectLocationAndFetchWeather() {
-                    if (navigator.geolocation) {
-                        navigator.geolocation.getCurrentPosition(position => {
-                            // For the sake of simplicity in this example, let's directly use the coordinates
-                            // Typically, you'd convert these to a ZIP code using a service like OpenCage Data, as previously described
-                            // Here, we're directly using OpenWeatherMap's API with coordinates
-                            var lat = position.coords.latitude;
-                            var lon = position.coords.longitude;
-                            fetchWeatherForCoords(lat, lon);
-                        }, () => {
-                            console.error("Geolocation permission denied or error occurred");
-                            // Handle errors or fallback here
-                        });
-                    }
-                }
-                
-                // Fetch weather based on coordinates
-                function fetchWeatherForCoords(lat, lon) {
-                    var apiKey = '14da677c3c40bd4ed50aba3dd48a1a91';
-                    var apiUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
-                
-                    fetch(apiUrl)
-                        .then(response => response.json())
-                        .then(data => {
-                            displayWeather(data);
-                        })
-                        .catch(error => {
-                            console.error('Error fetching weather data with coordinates:', error);
-                        });
-                }
-                
-                // Trigger automatic location detection and weather fetching on page load
-                document.addEventListener('DOMContentLoaded', function() {
-                    detectLocationAndFetchWeather();
-                });
-                
-                // Existing code to handle manual weather fetch based on entered ZIP code
-                document.getElementById('fetchWeather').addEventListener('click', function() {
-                    var zipCode = document.getElementById('zipCode').value;
-                    fetchWeatherForZip(zipCode);
-                });
-                </script> -->
             <script>
                 var placeholders = [
                     "Find the secret garden...",
@@ -452,7 +358,7 @@
 
                                 return; // Exit the function early if the input is invalid
                         }
-                    var apiKey = '14da677c3c40bd4ed50aba3dd48a1a91';
+                    var apiKey = '7c35a3cb6f3e8afb0421e4b51f437b35'; 
                     var apiUrl = `http://api.openweathermap.org/data/2.5/forecast?zip=${zipCode},us&appid=${apiKey}&units=imperial`;
                 
                     fetch(apiUrl)
