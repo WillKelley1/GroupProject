@@ -1,190 +1,149 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Organic Gardening Techniques For Your Garden</title>
-<style> 
-body { 
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-	background-color: #555;
-}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Organic Gardening Techniques For Your Garden</title>
+    <style> 
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: whitesmoke;
+            margin: 0;
+            padding: 0;
+        }
 
-.container { 
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 20px;
- }
-h2 {
-	color: #333;
-}
-ul {
-	list-style-type: disc;
-	margin-left: 20px;
-	}
-	li { 
-	margin-bottom: 10px;
- }
-/*Footer*/
- 	footer {
-        background-color: #333;
-        color: #59a86a; /* style.css controlling */
-        padding: 20px;
-        text-align: center;
-    }
+        header {
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 10px 0;
+        }
 
-    .fake-footer p {
-        margin: 5px 0;
-    }
+        .logo {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            width: 180px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #5dbfba;
+            color: white;
+            font-size: 24px;
+            font-family: cursive;
+        }
 
-/*Navigation stuff*/
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
 
-	.nav-links li {
-        margin-right: 20px;
-        transition: transform 0.3s ease;
-    }
+        .nav-links li {
+            flex: 1;
+            text-align: center;
+        }
 
-    .nav-links li:hover {
-        transform: translateY(-3px);
-    }
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            padding: 0.5rem 1rem;
+        }
 
-	body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-    }
+        h2 {
+            color: #090707;
+            font-family: cursive;
+        }
 
-    header {
-        background-color: #333;
-        height: 50px;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 1000;
-    }
+        .container {
+            max-width: 800px;
+            margin: 180px auto 20px; /* Adjust margin top due to fixed header */
+            padding: 20px;
+            color: #333;
+        }
 
-    .navbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px;
-    }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-left: 20px;
+        }
 
-    .logo {
-        color: #59a86a;
-        font-size: 24px;
-        margin: 0;
-    }
+        li {
+            margin-bottom: 10px;
+        }
 
-    .nav-links {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        font-size: 18px;
-    }
+        footer {
+            background-color: #333;
+            color: #59a86a;
+            padding: 20px;
+            text-align: center;
+        }
 
-	.nav-links li a {
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-    }
-/*Navigation stuff*/
+        .section {
+            background-color: #727070;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-/*--------For Introduction---------*/
-.introduction {
-        padding: 20px;
-        text-align: center;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
+        .section:hover {
+            transform: translateY(-5px);
+        }
 
-    .section {
-        background-color: #444444;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        margin-bottom: 20px;
-        transition: transform 0.3s ease;
-        flex: 1;
-        margin: 10px;
-    }
+        .section h2 {
+            color: #73ad21;
+            margin-bottom: 10px;
+        }
 
-    .section:hover {
-        transform: translateY(-5px);
-    }
-
-    .section h2 {
-        color: #73ad21;
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-
-    .section p {
-        line-height: 1.6;
-    }
-/*--------For Introduction---------*/
-</style>
-
-
-
-
+        .section p, .section li {
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
 
-	<header>
-        <nav class="navbar">
-            <h1 class="logo">Garden Guys</h1>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="store.html">Store</a></li>
-                <li><a href="tutorial-mainpage.html">Tutorials</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="Blog2.html">Blog 2</a></li>
-                <li><a href="Blog3.html">Blog 3</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="logo">Garden Guys</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="tutorial-mainpage.html">Tutorials</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Blog2.html">Blog 2</a></li>
+            <li><a href="Blog3.html">Blog 3</a></li>
+        </ul>
     </header>
 
-<div class="introduction">
-	<section class="section">
-<h2>Organinc Gardening Techniques</h2>
+    <div class="container">
+        <section class="section">
+            <h2>Organic Gardening Techniques</h2>
+            <p>Organic gardening focuses on using natural methods to cultivate plants. This guide covers key techniques:</p>
+            <ul>
+                <li><strong>Soil Health:</strong> Enhance soil fertility naturally with compost, manure, or cover crops.</li>
+                <li><strong>Companion Planting:</strong> Grow plants together that benefit each other to naturally repel pests or improve growth.</li>
+                <li><strong>Pest Management:</strong> Employ integrated pest management with natural predators and barriers.</li>
+                <li><strong>Water Conservation:</strong> Use efficient watering systems like drip irrigation to save water.</li>
+                <li><strong>Seed Saving:</strong> Preserve biodiversity by saving seeds from heirloom varieties.</li>
+                <li><strong>Weed Control:</strong> Manage weeds manually or with organic mulches, avoiding synthetic herbicides.</li>
+            </ul>
+        </section>
+    </div>
 
-<p>Organic gardening techniques focus on cultivating plants using natural methods without synthetic fertilizers, pesticides, or genetically modified organisms (GMOs). Here are some key principles and practices for organic gardening:</p>
-		<ul>
-			<li><strong>Soil health:</strong> Start with healthy soil as the foundation of your organic garden. Build soil fertility by adding organic matter such as compost, aged manure, or cover crops.
-			Avoid using synthetic fertilizers, which can disrupt soil ecosystems and harm beneficial soil organisms. Instead, rely on natural fertilizers like compost tea, fish emulsion, or organic granular fertilizers.</li>
-         	
-         	<li><strong>Companion Planting:</strong> Practice companion planting by growing mutually beneficial plant combinations. Some plants repel pests or attract beneficial insects, while others improve soil health or enhance flavor when planted together.
-			For example, planting marigolds alongside vegetables can deter pests, while planting nitrogen-fixing legumes like beans or peas can enrich the soil with nitrogen.</li>
-           
-           <li><strong>Pest and Disease Management:</strong>Use integrated pest management (IPM) techniques to control pests and diseases in your garden. This approach focuses on prevention and relies on natural and least-toxic methods whenever possible.
-			Encourage natural predators like ladybugs, lacewings, and birds to control pest populations. You can also use physical barriers, such as row covers or hand-picking pests, to manage infestations.
-			Rotate crops annually to prevent the buildup of pests and diseases in the soil. Diversity in plantings can also help reduce pest and disease pressure.</li>
-            
-            <li><strong>Water Conservation:</strong>Manage weeds through manual methods like hand-pulling, hoeing, or mulching. Mulching with organic materials like straw, wood chips, or shredded leaves suppresses weed growth, retains soil moisture, and adds organic matter to the soil.
-			Consider using a "no-till" approach to gardening, which minimizes soil disturbance and preserves soil structure and beneficial microorganisms.</li>
-            
-            <li><strong>Seed Saving and Heirloom Varieties:</strong> Conserve water in your garden by using efficient irrigation methods such as drip irrigation or soaker hoses, which deliver water directly to the root zone of plants.
-			Mulch around plants to reduce water evaporation from the soil surface and maintain consistent soil moisture levels. Water deeply and less frequently to encourage deeper root growth and drought tolerance in plants.</li>
-
-			<li> <strong>Weed Control:</strong>Preserve genetic diversity and adaptability by saving seeds from open-pollinated and heirloom varieties. Avoid hybrid and genetically modified seeds, which may not reproduce true to type.
-			Learn about seed-saving techniques and best practices for storing seeds to maintain their viability for future plantings.</li> 
-
-		</ul>
-		
-		<p>By following these organic gardening techniques, you can create a sustainable, environmentally friendly garden that produces healthy and nutritious crops while minimizing harm to the ecosystem. Organic gardening promotes biodiversity, soil health, and long-term resilience in the garden.</p>
-	</div>
-</div>
-
-<footer>
-	<div class="fake-footer">
-		<p>No feet were harmed in the making of this 'footer'.</p>
-		<p>Copyright(FAKE) © 2024 Garden Guys | 82 College Cir, Dahlonega, GA 30597 | All rights reserved.</p>
-	</div>
-</footer>
+    <footer>
+        <div class="fake-footer">
+            <p>No feet were harmed in the making of this 'footer'.</p>
+            <p>Copyright(FAKE) © 2024 Garden Guys | 82 College Cir, Dahlonega, GA 30597 | All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
-</html> 
+</html>

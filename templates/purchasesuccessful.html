@@ -2,6 +2,73 @@
 
 <!--This page will just simply display PURCHASE COMPLETED! as well as a button to take the user back to the home page or to continue shopping on the site-->
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+        .modal {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            animation: appear 0.5s ease-out forwards;
+        }
+        @keyframes appear {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="modal">
+    <h1>Payment Successful</h1>
+    <p>Thank you for your purchase!</p>
+    <div>
+        <button onclick="continueShopping()">Continue Shopping</button>
+        <button onclick="goHome()">Back to Home</button>
+    </div>
+</div>
+
+<script>
+    function continueShopping() {
+        window.location.href = 'store.html'; // Change to the URL of your shop
+    }
+
+    function goHome() {
+        window.location.href = 'index.html'; // Change to your home page URL
+    }
+</script>
+
+</body>
+</html>
 
 
 

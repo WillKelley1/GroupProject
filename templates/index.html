@@ -135,7 +135,8 @@
     .weather-forecast {
         padding: 10px 20px;
         margin-top: 50px;
-        background-color: #6a6b6d;
+        background-color: #6a6b6d; /*#6a6b6d */
+        visibility: hidden;
         color: #fff;
         border: none;
         border-radius: 20px;
@@ -301,9 +302,8 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="store.html">Store</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="Blog.html">Blog</a></li>
                 <li><a href="tutorial-mainpage.html">Tutorials</a></li>
-                <li><a href="#seasons">What's In Season?</a></li>
                 <li><a href="checkout.html">My Cart</a></li>
             </ul>
         </nav>
@@ -467,6 +467,7 @@
                 
                 // Function to display weather data
                 function displayWeather(data) {
+                    document.getElementById('weatherForecast').style.visibility = 'visible';
                     var forecastDiv = document.getElementById('weatherForecast');
                     forecastDiv.innerHTML = ''; // Clear previous forecast
                 
