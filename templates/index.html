@@ -1,46 +1,4 @@
-<!-- Homepage -->
-<!-- 
-<!DOCTYPE html>
-<head>
-    <title>Welcome to our website</title>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <h1 class="logo">Garden Guys</h1>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="store.html">Store</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#tutorials">Tutorials</a></li>
-                <li><a href="#seasons">What's In Season?</a></li>
-                <li><a href="#subscribe" class="subscribe-btn">Subscribe</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div id="content">
-        <section id="home">
-            <img src="gardener.jpg" alt="A gardener working in the garden">
-            <h2>Welcome to Garden Guys!</h2>
-            <p>We are a small, family run business based in Northampton. We specialise in growing all manner of plants and flowers</p>
-        </section>
-    </div>
-    
-
-
-
-</body>
-
-<footer>
-    
-</footer>
-
-</html> -->
 <!--Homepage-->
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -318,106 +276,11 @@
 
     <div id="content">
         <section id="home">
-            <!--<img src="gardener.jpg" alt="A gardener working in the garden" width="500" height="500"> -->
         
-           <!-- You need to change your api key STAT it WAS ACCIDENTLY ADDED TO GPT APRIL 7th 
-                CHANGE IT SO THAT YOU DO NOT GET CHARGED UNBELIEVABLE AMOUNTS OF MONEY-->
+           <!--Make sure that you disable the API Key after the Project is Graded-->
            
            <h1>Welcome to Garden Guys!</h1>
 
-           <!--------------SIGN IN TESTING------------>
-           <!--
-            <div class="account-tab">
-                <a href="signin.html">Sign In / Create Account</a>
-            </div>
-            -->
-        <!--------------SIGN IN TESTING------------>
-        
-            <!-- <div class="box-of-searching">
-                <input type="text" class="search-input" placeholder="Search the Garden">
-                <button type="submit" class="search-button">GROW!</button> see what i did there
-            </div> -->
-            <!-- <script>
-                // Existing weather fetch functionality for a given ZIP code
-                function fetchWeatherForZip(zipCode) {
-                    var apiKey = '14da677c3c40bd4ed50aba3dd48a1a91';
-                    var apiUrl = `http://api.openweathermap.org/data/2.5/forecast?zip=${zipCode},us&appid=${apiKey}&units=imperial`;
-                
-                    fetch(apiUrl)
-                        .then(response => response.json())
-                        .then(data => {
-                            displayWeather(data);
-                        })
-                        .catch(error => {
-                            console.error('Error fetching weather data:', error);
-                        });
-                }
-                
-                // Function to display weather data
-                function displayWeather(data) {
-                    var forecastDiv = document.getElementById('weatherForecast');
-                    forecastDiv.innerHTML = ''; // Clear previous forecast
-                
-                    for (let i = 0; i < 5; i++) {
-                        let date = new Date(data.list[i * 8].dt_txt);
-                        let temp = data.list[i * 8].main.temp;
-                        let description = data.list[i * 8].weather[0].description;
-                        let icon = data.list[i * 8].weather[0].icon;
-                
-                        forecastDiv.innerHTML += `
-                            <div style="padding: 10px; text-align: center; display: inline-block;">
-                                <p><b>${date.toDateString()}</b></p>
-                                <img src="http://openweathermap.org/img/wn/${icon}.png" alt="${description}">
-                                <p>${temp} °F</p>
-                                <p>${description}</p>
-                            </div>
-                        `;
-                    }
-                }
-                
-                // New functionality for automatic location detection and weather fetching
-                function detectLocationAndFetchWeather() {
-                    if (navigator.geolocation) {
-                        navigator.geolocation.getCurrentPosition(position => {
-                            // For the sake of simplicity in this example, let's directly use the coordinates
-                            // Typically, you'd convert these to a ZIP code using a service like OpenCage Data, as previously described
-                            // Here, we're directly using OpenWeatherMap's API with coordinates
-                            var lat = position.coords.latitude;
-                            var lon = position.coords.longitude;
-                            fetchWeatherForCoords(lat, lon);
-                        }, () => {
-                            console.error("Geolocation permission denied or error occurred");
-                            // Handle errors or fallback here
-                        });
-                    }
-                }
-                
-                // Fetch weather based on coordinates
-                function fetchWeatherForCoords(lat, lon) {
-                    var apiKey = '14da677c3c40bd4ed50aba3dd48a1a91';
-                    var apiUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
-                
-                    fetch(apiUrl)
-                        .then(response => response.json())
-                        .then(data => {
-                            displayWeather(data);
-                        })
-                        .catch(error => {
-                            console.error('Error fetching weather data with coordinates:', error);
-                        });
-                }
-                
-                // Trigger automatic location detection and weather fetching on page load
-                document.addEventListener('DOMContentLoaded', function() {
-                    detectLocationAndFetchWeather();
-                });
-                
-                // Existing code to handle manual weather fetch based on entered ZIP code
-                document.getElementById('fetchWeather').addEventListener('click', function() {
-                    var zipCode = document.getElementById('zipCode').value;
-                    fetchWeatherForZip(zipCode);
-                });
-                </script> -->
             <script>
                 var placeholders = [
                     "Find the secret garden...",
@@ -452,7 +315,7 @@
 
                                 return; // Exit the function early if the input is invalid
                         }
-                    var apiKey = '14da677c3c40bd4ed50aba3dd48a1a91';
+                    var apiKey = '7c35a3cb6f3e8afb0421e4b51f437b35'; 
                     var apiUrl = `http://api.openweathermap.org/data/2.5/forecast?zip=${zipCode},us&appid=${apiKey}&units=imperial`;
                 
                     fetch(apiUrl)
@@ -550,44 +413,7 @@
             </script>
 
 
-            <!-- <script>
-                document.getElementById('fetchWeather').addEventListener('click', function() {
-                    var zipCode = document.getElementById('zipCode').value;
-                    var apiKey = '14da677c3c40bd4ed50aba3dd48a1a91';
-                    var apiUrl = `http://api.openweathermap.org/data/2.5/forecast?zip=${zipCode},us&appid=${apiKey}&units=imperial`;
-                
-                    fetch(apiUrl)
-                        .then(response => response.json())
-                        .then(data => {
-                            displayWeather(data);
-                        })
-                        .catch(error => {
-                            console.error('Error fetching weather data:', error);
-                        });
-                });
-                
-                function displayWeather(data) {
-                    var forecastDiv = document.getElementById('weatherForecast');
-                    forecastDiv.innerHTML = ''; // Clear previous forecast
-                
-                    // Assuming the API returns a 5-day forecast
-                    for (let i = 0; i < 5; i++) {
-                        let date = new Date(data.list[i * 8].dt_txt);
-                        let temp = data.list[i * 8].main.temp;
-                        let description = data.list[i * 8].weather[0].description;
-                        let icon = data.list[i * 8].weather[0].icon;
-                
-                        forecastDiv.innerHTML += `
-                            <div style="padding: 10px; text-align: center; display: inline-block;">
-                                <p><b>${date.toDateString()}</b></p>
-                                <img src="http://openweathermap.org/img/wn/${icon}.png" alt="${description}">
-                                <p>${temp} °F</p>
-                                <p>${description}</p>
-                            </div>
-                        `;
-                    }
-                }
-                </script> -->
+           
             
         </section>
     </div>
@@ -633,12 +459,7 @@
         </section>
 
 </div>
-        <!--
-        <p>Welcome to Garden Guys - your one-stop destination for all your gardening needs! </p>
-        <p>At Garden Guys, we believe that every garden has the potential to be a masterpiece, and we're here to help you bring your green dreams to life. Whether you're a seasoned gardener or just starting out, our wide range of high-quality garden supplies, tools, and accessories has everything you need to cultivate your own slice of paradise.</p>
-        <p>From vibrant flowers to lush foliage, from sturdy tools to innovative solutions, we've carefully curated our collection to inspire and empower garden enthusiasts of all levels. Our online shop offers convenient access to a diverse selection of products, ensuring that you can find exactly what you need to nurture your garden with love and care.</p>
-        <p>Join us on this green journey and let the Garden Guys be your trusted partner in creating a flourishing garden sanctuary that reflects your unique style and passion. Happy gardening!</p>
-        -->
+
         <div class="social-media-links">
             <h3>Check us out on social media:</h3>
 
